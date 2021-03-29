@@ -2,7 +2,7 @@
 using R to perform multiple linear regression analysis, collect summary statistics, and run t-tests
 
 ## 1 Linear Regression to Predict MPG
-![](Images/linreg.PNG)
+![](Images/linreg.png)
 - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
  The vehicle length, ground clearance, and intercept coefficents are all statistically significant. They have p-values of 2.60e-12, 5.21e-08, and 5.08e-08, meaning they are all less than 0.05. Therefore, there is a 5% chance that the null hypotheses (that these independent variables have no effect on mpg) is true. 
  
@@ -14,9 +14,9 @@ With an R-squared of 0.7149, 71.49% of variability in MPG can be explained by th
 
 ## 2 Summary Statistics on Suspension Coils
 
-![](Images/summary.PNG)
+![](Images/summary.png)
 
-![](Images/lots.PNG)
+![](Images/lots.png)
 
 - The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 The design specifications are met when looking at all manufacturing lots together, as the variance is 62.29. However, looking at each lot individually, Lot 3's variance is 170.29, exceeding 100. For Lot 3, the design specifications are not met.
@@ -26,15 +26,15 @@ The design specifications are met when looking at all manufacturing lots togethe
 - H0: True Mean = 1500
 - H1: True Mean != 1500
 
-![](Images/ttest.PNG)
+![](Images/ttest.png)
 
 The p-value is 0.06, so greater than alpha 0.05. Therefore, we fail to reject the null hypothesis and the true mean could be 1500.
 
-![](Images/3t_test.PNG)
+![](Images/3t_tests.png)
 
 For Lots 1 and 2, the p-value is higher than 0.05, so we fail to reject the null hupothesis. 
 
-Lot 3, however, has a p-value of 0.04, so we fail to reject the null hypothesis. There is a 5% chance that we would have the results from Lot 3 if the true mean was 1500. We conclude that the true mean PSI of cars in Lot 3 is not equal to 1500.
+Lot 3, however, has a p-value of 0.04, so we fail to reject the null hypothesis. There is a 5% chance that we would have the results from Lot 3 if the true mean PSI was 1500.
 
 ## 4 Study Design: MechaCar vs Competition
 Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating
