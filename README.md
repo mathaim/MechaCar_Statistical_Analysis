@@ -2,6 +2,7 @@
 using R to perform multiple linear regression analysis, collect summary statistics, and run t-tests
 
 ## 1 Linear Regression to Predict MPG
+![](Images/linreg.PNG)
 - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
  The vehicle length, ground clearance, and intercept coefficents are all statistically significant. They have p-values of 2.60e-12, 5.21e-08, and 5.08e-08, meaning they are all less than 0.05. Therefore, there is a 5% chance that the null hypotheses (that these independent variables have no effect on mpg) is true. 
  
@@ -12,14 +13,24 @@ The slope of this model cannot be considered zero because the p-value of the mod
 With an R-squared of 0.7149, 71.49% of variability in MPG can be explained by the independent variables. The adjusted R-squared is 0.6825, which is a better guage of model fit because it decreases when a predictor improves the model by less than expected by random chance. 
 
 ## 2 Summary Statistics on Suspension Coils
+
+![](Images/summary.PNG)
+
+![](Images/lots.PNG)
+
 - The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 The design specifications are met when looking at all manufacturing lots together, as the variance is 62.29. However, looking at each lot individually, Lot 3's variance is 170.29, exceeding 100. For Lot 3, the design specifications are not met.
 
 ## 3 T-Tests on Suspension Coils
+
 - H0: True Mean = 1500
 - H1: True Mean != 1500
 
+![](Images/ttest.PNG)
+
 The p-value is 0.06, so greater than alpha 0.05. Therefore, we fail to reject the null hypothesis and the true mean could be 1500.
+
+![](Images/3t_test.PNG)
 
 For Lots 1 and 2, the p-value is higher than 0.05, so we fail to reject the null hupothesis. 
 
